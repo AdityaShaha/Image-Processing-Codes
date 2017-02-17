@@ -14,8 +14,8 @@ for i = 1:Y
 end
 
 % The RGB to Grayscale Equation x = 0.299r + 0.587g + 0.114b
-for i = 1:321
-    for j = 1:481
+for i = 1:Y
+    for j = 1:X
         fimg2(i,j) = 0.299*red(i,j)+0.587*green(i,j)+0.114*blue(i,j);
     end
 end
