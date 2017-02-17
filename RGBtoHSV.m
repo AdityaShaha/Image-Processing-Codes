@@ -1,11 +1,11 @@
-img = imread('Image1.png');
+img = imread('Image01.png');
 red = im2double(img(:,:,1)); % Red channel
 green = im2double(img(:,:,2)); % Green channel
 blue = im2double(img(:,:,3)); % Blue channel
 % By the method of
-
-for i = 1:321
-    for j = 1:481
+[Y, X, Z] = size(img);
+for i = 1:Y
+    for j = 1:X
         var_R = (red(i,j) / 255);                     %RGB from 0 to 255
         var_G = (green(i,j) / 255);
         var_B = (blue(i,j) / 255);

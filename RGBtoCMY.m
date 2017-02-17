@@ -1,4 +1,4 @@
-img = imread('Image1.png');
+img = imread('Image01.png');
 red = im2double(img(:,:,1)); % Red channel
 green = im2double(img(:,:,2)); % Green channel
 blue = im2double(img(:,:,3)); % Blue channel

@@ -1,4 +1,4 @@
-img = imread('Image1.png');
+img = imread('Image01.png');
 img_gray = rgb2gray(img);
 
 img_gray = img_gray./32;
@@ -6,8 +6,9 @@ red = img(:,:,1); % Red channel
 green = img(:,:,2); % Green channel
 blue = img(:,:,3); % Blue channel
 % By the method of MEAN
-for i = 1:321
-    for j = 1:481
+[Y, X, Z] = size(img);
+for i = 1:Y
+    for j = 1:X
         fimg(i,j) = (red(i,j)+green(i,j)+blue(i,j))/3;
     end
 end
